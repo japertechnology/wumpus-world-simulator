@@ -41,3 +41,4 @@ All development should be done on feature branches created from the `master` bra
 4. Open a pull request against `master` on GitHub and describe your changes.
 
 We will review your pull request as soon as possible. Thank you for contributing!
+
