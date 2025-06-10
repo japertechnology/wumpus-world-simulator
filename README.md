@@ -52,10 +52,15 @@ The Wumpus World Simulator is available at following languages:
 
 ## Development
 
-Install dependencies with `npm install`.
+Install dependencies with:
+
+```bash
+npm install
+```
+
 Start a local server using:
 
-```
+```bash
 npm start
 ```
 
@@ -63,7 +68,7 @@ This serves the app on <http://localhost:8080>.
 
 Run tests with:
 
-```
+```bash
 npm test
 ```
 
