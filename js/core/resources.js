@@ -18,12 +18,15 @@ let resources = {
         }
     },
 
-    stop: function(name){
+    stop: function(name, unload = false){
 
         let sound = this.musics[name];
 
         if (sound && sound.playing()) {
             sound.stop();
+        }
+
+        if(sound && unload){
             sound.unload();
         }
     },
