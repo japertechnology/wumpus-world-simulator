@@ -177,12 +177,13 @@ var Environment = function(i, j, width, height, opts) {
     }
 
     this.drawLine = function(ctx, x0, y0, x1, y1){
-    	ctx.strokeStyle = 'gray';
-    	ctx.lineWidth = 1.0;
+        ctx.strokeStyle = 'gray';
+        ctx.lineWidth = 1.0;
+        ctx.beginPath();
         //ctx.translate(0.5, 0.5)
-    	ctx.moveTo(x0+0.5, y0+0.5);
-    	ctx.lineTo(x1+0.5, y1+0.5);
-    	ctx.stroke();
+        ctx.moveTo(x0+0.5, y0+0.5);
+        ctx.lineTo(x1+0.5, y1+0.5);
+        ctx.stroke();
     }
 
     this.randomInitialization();
