@@ -135,5 +135,9 @@ var Player = function(env, x, y) {
         }else if(this.direction == FACING_TO_RIGHT){
             ctx.drawImage(resources.images['facing_to_right'], this.x, this.y, this.env.width, this.env.height);
         }
-	};
+        };
 };
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = Player;
+}
