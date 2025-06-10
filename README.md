@@ -36,6 +36,24 @@ The Wumpus World Simulator is available at following languages:
 * fr
 * tr_TR
 
+## Development
+
+Install dependencies with `npm install`.
+Start a local server using:
+
+```
+npm start
+```
+
+This serves the app on <http://localhost:8080>.
+
+Run tests with:
+
+```
+npm test
+```
+
+
 ## Questions or Suggestions
 
 Feel free to create <a href="https://github.com/thiagodnf/wumpus-world-simulator/issues">issues</a> here as you need
