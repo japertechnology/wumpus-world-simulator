@@ -24,6 +24,20 @@ Access the simulator [here](http://thiagodnf.github.io/wumpus-world-simulator/).
   <img class="screenshot" src="https://raw.githubusercontent.com/thiagodnf/wumpus-world-simulator/master/img/screenshot.png"/>
 </kbd>
 
+## Development
+
+To run the simulator locally you only need **Node.js**. If Node is not installed, download it from the [official website](https://nodejs.org/) and follow the installer instructions for your operating system.
+
+Clone the repository and start a static server from the project directory:
+
+```bash
+git clone https://github.com/thiagodnf/wumpus-world-simulator.git
+cd wumpus-world-simulator
+npx http-server
+```
+
+After running the command above open `http://localhost:8080` in your browser to play the game locally. If you prefer you can create an `npm start` script that calls `npx http-server` so that starting the server is as simple as `npm start`.
+
 ## Languages
 The Wumpus World Simulator is available at following languages:
 * en-US
