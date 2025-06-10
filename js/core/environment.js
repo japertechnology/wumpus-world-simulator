@@ -150,13 +150,13 @@ var Environment = function(i, j, width, height) {
             }
         }
 
-        // Draw horizontal lines
+        // Draw vertical grid lines
         for (let i = 1; i < this.i; i++) {
-            this.drawLine(ctx, i*this.width, 0, i*this.height, this.j*this.width);
+            this.drawLine(ctx, i * this.width, 0, i * this.width, this.j * this.height);
         }
-        // Draw vertical lines
+        // Draw horizontal grid lines
         for (let j = 1; j < this.j; j++) {
-            this.drawLine(ctx, 0, j*this.height, this.i*this.width, j*this.height);
+            this.drawLine(ctx, 0, j * this.height, this.i * this.width, j * this.height);
         }
 	};
 
