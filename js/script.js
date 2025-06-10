@@ -7,6 +7,9 @@ var canvas,			// Canvas DOM element
 	isFinished = false,
     player;
 
+// Flag to control debug logging
+const DEBUG = false;
+
 function restart(){
 
     if (!env){
@@ -165,7 +168,7 @@ function getCurrentVolume(){
 
 function changeVolumeTo(level){
 
-    console.log("Changing volume to", level);
+    DEBUG && console.log("Changing volume to", level);
 
     Howler.volume(level);
 
@@ -178,7 +181,7 @@ function getCurrentLanguage(){
 
 function changeLanguageTo(locale){
 
-    console.log("Changing language to", locale);
+    DEBUG && console.log("Changing language to", locale);
 
     if (locale == "ar") {
         $("html[lang=en]").attr("dir", "rtl")
@@ -200,7 +203,7 @@ function changeLanguageTo(locale){
 
 $(function(){
 
-	console.log("Welcome to Wumpus World Simulator");
+	DEBUG && console.log("Welcome to Wumpus World Simulator");
 
     // Declare the canvas and rendering context
 	canvas = document.getElementById("canvas");
