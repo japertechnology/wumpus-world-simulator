@@ -80,6 +80,7 @@ Feel free to create <a href="https://github.com/thiagodnf/wumpus-world-simulator
 ## Contribute
 
 Contributions to the this project are very welcome! We can't do this alone! Feel free to fork this project, work on it and then make a pull request.
+Please read our [Code of Conduct](CODE_OF_CONDUCT.md) so that you know what we expect from participants.
 
 ## Authors
 
