@@ -24,6 +24,10 @@ Access the simulator [here](http://thiagodnf.github.io/wumpus-world-simulator/).
   <img class="screenshot" src="https://raw.githubusercontent.com/thiagodnf/wumpus-world-simulator/master/img/screenshot.png"/>
 </kbd>
 
+## Configuration
+You can change the board size and the number of elements before starting a new game.
+Use the settings tab to set the desired number of lines, columns, holes, wumpus and golds, then press **Restart** to apply.
+
 ## Languages
 The Wumpus World Simulator is available at following languages:
 * en-US
@@ -31,6 +35,24 @@ The Wumpus World Simulator is available at following languages:
 * ar
 * fr
 * tr_TR
+
+## Development
+
+Install dependencies with `npm install`.
+Start a local server using:
+
+```
+npm start
+```
+
+This serves the app on <http://localhost:8080>.
+
+Run tests with:
+
+```
+npm test
+```
+
 
 ## Questions or Suggestions
 

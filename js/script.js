@@ -7,21 +7,38 @@ var canvas,			// Canvas DOM element
 	isFinished = false,
     player;
 
+
 // Flag to control debug logging
 const DEBUG = false;
 
+var defaultConfig = {
+    lines: 15,
+    columns: 8,
+    holes: 10,
+    wumpus: 8,
+    golds: 8
+};
+
+function getGameConfig(){
+    return {
+        lines: parseInt($("#input-lines").val()) || defaultConfig.lines,
+        columns: parseInt($("#input-columns").val()) || defaultConfig.columns,
+        holes: parseInt($("#input-holes").val()) || defaultConfig.holes,
+        wumpus: parseInt($("#input-wumpus").val()) || defaultConfig.wumpus,
+        golds: parseInt($("#input-golds").val()) || defaultConfig.golds
+    };
+}
+
 function restart(){
 
-    if (!env){
-        env = new Environment(15, 8, 64, 64);
-    }
+    const cfg = getGameConfig();
+    env = new Environment(cfg.lines, cfg.columns, 64, 64, {
+        holes: cfg.holes,
+        wumpus: cfg.wumpus,
+        golds: cfg.golds
+    });
 
-    // We need to create a new environment if it is the first time of the player won
-    if (isFinished) {
-        env = new Environment(15, 8, 64, 64);
-    } else {
-        env.restart();
-    }
+    resizeCanvas();
 
     player = new Player(env, 0, 0);
 

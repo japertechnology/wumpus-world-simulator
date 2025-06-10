@@ -2,10 +2,15 @@
   "name": "wumpus-world-simulator",
   "version": "1.0.0",
   "description": "Wumpus World Simulator",
+  "main": "index.html",
+  "author": "Thiago Ferreira",
+  "license": "MIT",
   "scripts": {
+    "start": "http-server -p 8080",
     "test": "jest"
   },
   "devDependencies": {
+    "http-server": "^14.1.1",
     "jest": "^29.7.0"
   }
 }
