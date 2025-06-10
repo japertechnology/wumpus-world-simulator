@@ -1,3 +1,4 @@
+// MIT License. See LICENSE in the project root for details.
 const ArrayUtils = require('../js/utils/array-utils');
 
 describe('ArrayUtils.removeByValues', () => {

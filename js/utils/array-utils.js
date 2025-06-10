@@ -1,3 +1,4 @@
+// MIT License. See LICENSE in the project root for details.
 class ArrayUtils {
 
     static getIndexesFromSize(lines) {
