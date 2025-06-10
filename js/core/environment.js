@@ -2,12 +2,17 @@
 ** GAME ENVIRONMENT CLASS
 **************************************************/
 
-var Environment = function(i, j, width, height) {
+var Environment = function(i, j, width, height, opts) {
+
+    opts = opts || {};
 
     this.i = i;
-  	this.j = j;
+        this.j = j;
     this.width = width;
     this.height = height;
+    this.holesCount = opts.holes || 10;
+    this.wumpusCount = opts.wumpus || 8;
+    this.goldsCount = opts.golds || 8;
     this.removeWalls = false;
     this.visible = [];
     this.holes = [];
@@ -27,9 +32,13 @@ var Environment = function(i, j, width, height) {
 		this.wumpus = ArrayUtils.copy(this.level.wumpus);
     };
 
-	this.randomInitialization = function(){
+    this.randomInitialization = function(){
 
-        this.level = RandomUtils.getRandomLevel(this.i, this.j);
+        this.level = RandomUtils.getRandomLevel(this.i, this.j, {
+            holes: this.holesCount,
+            wumpus: this.wumpusCount,
+            golds: this.goldsCount
+        });
 
         this.restart();
     };

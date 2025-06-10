@@ -16,3 +16,12 @@ describe('RandomUtils.getRandomElements', () => {
     expect(new Set(result).size).toBe(result.length);
   });
 });
+
+describe('RandomUtils.getRandomLevel', () => {
+  test('uses provided counts', () => {
+    const level = RandomUtils.getRandomLevel(4, 4, { holes: 2, wumpus: 1, golds: 1 });
+    expect(level.holes.length).toBe(2);
+    expect(level.wumpus.length).toBe(1);
+    expect(level.golds.length).toBe(1);
+  });
+});
