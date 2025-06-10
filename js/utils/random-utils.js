@@ -69,3 +69,7 @@ class RandomUtils {
         return { holes, wumpus, golds };
     }
 }
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = RandomUtils;
+}
