@@ -38,6 +38,10 @@ npx http-server
 
 After running the command above open `http://localhost:8080` in your browser to play the game locally. If you prefer you can create an `npm start` script that calls `npx http-server` so that starting the server is as simple as `npm start`.
 
+## Configuration
+You can change the board size and the number of elements before starting a new game.
+Use the settings tab to set the desired number of lines, columns, holes, wumpus and golds, then press **Restart** to apply.
+
 ## Languages
 The Wumpus World Simulator is available at following languages:
 * en-US
@@ -45,6 +49,24 @@ The Wumpus World Simulator is available at following languages:
 * ar
 * fr
 * tr_TR
+
+## Development
+
+Install dependencies with `npm install`.
+Start a local server using:
+
+```
+npm start
+```
+
+This serves the app on <http://localhost:8080>.
+
+Run tests with:
+
+```
+npm test
+```
+
 
 ## Questions or Suggestions
 
