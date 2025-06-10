@@ -48,7 +48,11 @@ class RandomUtils {
         return selected.map(el => array[el]);
     }
 
-    static getRandomLevel(lines, columns) {
+    static getRandomLevel(lines, columns, opts = {}) {
+
+        const holesCount = opts.holes || 10;
+        const wumpusCount = opts.wumpus || 8;
+        const goldsCount = opts.golds || 8;
 
         let positions = ArrayUtils.getIndexes(lines, columns);
 
@@ -57,13 +61,13 @@ class RandomUtils {
         positions = ArrayUtils.removeByValues(positions, [[1, 0]]);
         positions = ArrayUtils.removeByValues(positions, [[1, 1]]);
 
-        let holes = RandomUtils.getRandomElements(positions, 10);
+        let holes = RandomUtils.getRandomElements(positions, Math.min(holesCount, positions.length));
         positions = ArrayUtils.removeByValues(positions, holes);
 
-        let wumpus = RandomUtils.getRandomElements(positions, 8);
+        let wumpus = RandomUtils.getRandomElements(positions, Math.min(wumpusCount, positions.length));
         positions = ArrayUtils.removeByValues(positions, wumpus);
 
-        let golds = RandomUtils.getRandomElements(positions, 8);
+        let golds = RandomUtils.getRandomElements(positions, Math.min(goldsCount, positions.length));
         positions = ArrayUtils.removeByValues(positions, golds);
 
         return { holes, wumpus, golds };

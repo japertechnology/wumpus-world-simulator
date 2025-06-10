@@ -24,6 +24,10 @@ Access the simulator [here](http://thiagodnf.github.io/wumpus-world-simulator/).
   <img class="screenshot" src="https://raw.githubusercontent.com/thiagodnf/wumpus-world-simulator/master/img/screenshot.png"/>
 </kbd>
 
+## Configuration
+You can change the board size and the number of elements before starting a new game.
+Use the settings tab to set the desired number of lines, columns, holes, wumpus and golds, then press **Restart** to apply.
+
 ## Languages
 The Wumpus World Simulator is available at following languages:
 * en-US
