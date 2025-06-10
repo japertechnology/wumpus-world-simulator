@@ -92,14 +92,18 @@ var Keys = function(up, left, right, down, space, enter) {
 	// 	};
 	// };
 
-	return {
-		up: up,
-		left: left,
-		right: right,
-		down: down,
-		space: space,
-		enter: enter,
-		onKeyDown: onKeyDown,
-		onKeyUp: onKeyUp
-	};
+        return {
+                up: up,
+                left: left,
+                right: right,
+                down: down,
+                space: space,
+                enter: enter,
+                onKeyDown: onKeyDown,
+                onKeyUp: onKeyUp
+        };
 };
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = Keys;
+}

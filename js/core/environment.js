@@ -188,3 +188,7 @@ var Environment = function(i, j, width, height, opts) {
 
     this.randomInitialization();
 };
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = Environment;
+}
