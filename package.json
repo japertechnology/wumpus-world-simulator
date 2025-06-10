@@ -1,0 +1,11 @@
+{
+  "name": "wumpus-world-simulator",
+  "version": "1.0.0",
+  "description": "Wumpus World Simulator",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
