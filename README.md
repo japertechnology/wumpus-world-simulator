@@ -2,6 +2,8 @@
 
 A Wumpus World Simulator developed in Javascript, HTML and CSS
 
+See the [CHANGELOG](CHANGELOG.md) for release history.
+
 [![GitHub Release](https://img.shields.io/github/release/thiagodnf/wumpus-world-simulator.svg)](https://github.com/thiagodnf/wumpus-world-simulator/releases/latest)
 [![GitHub contributors](https://img.shields.io/github/contributors/thiagodnf/wumpus-world-simulator.svg)](https://github.com/thiagodnf/wumpus-world-simulator/graphs/contributors)
 [![GitHub stars](https://img.shields.io/github/stars/thiagodnf/wumpus-world-simulator.svg)](https://github.com/thiagodnf/wumpus-world-simulator)
