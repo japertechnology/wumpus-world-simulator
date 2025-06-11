@@ -1,4 +1,4 @@
-# Wumpus World Simulator
+# Wumpus World Simulator as an OpenAI Codex Sandpit
 
 A Wumpus World Simulator developed in Javascript, HTML and CSS
 
